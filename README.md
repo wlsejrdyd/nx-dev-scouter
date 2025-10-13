@@ -8,6 +8,8 @@
 ## 🚀 기술 스택
 
 - JDK 1.8 사용
+- build java 17
+- build tool gradle 8.5
 - Slack WebHook 플러그인 추가완료
 - Server/Collector (scouter-server)
 - Agent-Host (scouter-host)

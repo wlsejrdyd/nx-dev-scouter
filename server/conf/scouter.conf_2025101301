@@ -1,14 +1,10 @@
-server-id=jdy-vm-srv-01
+server-id=serverid
 
 net_tcp_listen_port=6100
 net_udp_listen_port=6100
 
-db_dir=/app/scouter/server/data
-log_dit=/app/scouter/server/logs
-
-# 커스텀 텍스트 파일 플러그인 설정
-custom_text_file_path=/var/log/messages
-custom_check_interval=60000
+db_dir=scdir/data
+log_dit=scdir/logs
 
 ## External Interface (Slack)
 #ext_plugin_slack_send_alert=true

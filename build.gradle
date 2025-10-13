@@ -1,0 +1,55 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.custom.scouter'
+version = '1.0.0'
+
+sourceCompatibility = '17'
+targetCompatibility = '17'
+
+repositories {
+    mavenCentral()
+    maven {
+        url 'https://jitpack.io'
+    }
+}
+
+dependencies {
+    // Scouter 의존성
+    compileOnly 'io.github.scouter-project:scouter-common:2.20.0'
+    compileOnly 'io.github.scouter-project:scouter-server:2.20.0'
+    
+    // 로깅
+    implementation 'org.slf4j:slf4j-api:1.7.36'
+    
+    // 테스트
+    testImplementation 'junit:junit:4.13.2'
+}
+
+// JAR 빌드 설정
+jar {
+    archiveBaseName = 'scouter-textfile-plugin'
+    archiveVersion = version
+    
+    manifest {
+        attributes(
+            'Implementation-Title': 'Scouter Text File Plugin',
+            'Implementation-Version': version
+        )
+    }
+}
+
+// Fat JAR 생성 (모든 의존성 포함)
+task fatJar(type: Jar) {
+    archiveBaseName = 'scouter-textfile-plugin-all'
+    archiveVersion = version
+    
+    from {
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+    
+    with jar
+    
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+}
