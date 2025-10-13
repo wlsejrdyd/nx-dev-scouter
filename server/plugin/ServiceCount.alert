@@ -1,0 +1,5 @@
+$$.httpGet(String url, Map<String, String> paramMap, int timeoutMillis)$$.log(java.lang.Object)$$.println(java.lang.Object)$$.toMap(String[] keyValueArray)$$.toShortenUrl(java.lang.String, java.lang.String)$$.urlDecode(java.lang.String)$$.urlEncode(java.lang.String)$counter.getLatestAvg(int durationSec)$counter.getIntValue(String counter)$counter.getIntValue(String objectFullName, String counter)$counter.getObjName()$counter.getOverCount(float value, int sec)// void process(RealCounter $counter, PluginHelper $$) {
+// create your java code below..
+
+
+// }

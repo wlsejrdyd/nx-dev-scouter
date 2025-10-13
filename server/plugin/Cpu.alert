@@ -1,0 +1,5 @@
+// void process(RealCounter $counter, PluginHelper $$) {
+// create your java code below..
+
+
+// }$counter.getAvg(int fromAgoSec, int durationSec)$counter.fatal(String title, String message)$counter.error(String title, String message)

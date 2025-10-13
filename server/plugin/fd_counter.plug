@@ -1,0 +1,68 @@
+/**
+ * File Descriptor Counter Plugin
+ * PID 501049의 FD 개수를 모니터링
+ */
+
+import scouter.lang.counters.CounterConstants
+import scouter.lang.pack.PerfCounterPack
+import scouter.lang.value.DecimalValue
+
+// 설정
+def TARGET_PID = "1"
+def FD_PATH = "/proc/${TARGET_PID}/fd/"
+
+// Counter 메서드 - 주기적으로 실행됨
+def counter() {
+    try {
+        def fdDir = new File(FD_PATH)
+        
+        if (!fdDir.exists()) {
+            println "[FD Counter] Process not found: PID ${TARGET_PID}"
+            return
+        }
+        
+        // FD 개수 카운트
+        def fdCount = fdDir.listFiles()?.length ?: 0
+        
+        // Max FD 조회
+        def maxFd = getMaxFd(TARGET_PID)
+        def fdUsage = maxFd > 0 ? (fdCount * 100.0 / maxFd) as int : 0
+        
+        // PerfCounterPack 생성
+        def pack = new PerfCounterPack()
+        pack.time = System.currentTimeMillis()
+        pack.objName = getObjName()
+        
+        // 커스텀 카운터 추가
+        pack.put("CustomFdCount", new DecimalValue(fdCount))
+        pack.put("CustomFdUsage", new DecimalValue(fdUsage))
+        pack.put("CustomFdMax", new DecimalValue(maxFd))
+        
+        // 전송
+        agent.sendCounter(pack)
+        
+        println "[FD Counter] PID: ${TARGET_PID}, FD: ${fdCount}/${maxFd} (${fdUsage}%)"
+        
+    } catch (Exception e) {
+        println "[FD Counter] Error: ${e.message}"
+        e.printStackTrace()
+    }
+}
+
+// Max FD 조회
+def getMaxFd(pid) {
+    try {
+        def limits = new File("/proc/${pid}/limits").text
+        def matcher = limits =~ /Max open files\s+(\d+)/
+        if (matcher.find()) {
+            return matcher.group(1) as int
+        }
+    } catch (Exception e) {
+        println "[FD Counter] Failed to get max FD: ${e.message}"
+    }
+    return 65536
+}
+
+def getObjName() {
+    return System.getProperty("obj_name", "unknown")
+}

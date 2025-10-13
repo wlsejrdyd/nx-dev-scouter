@@ -1,8 +1,20 @@
 #!/bin/bash
 #made by jindeokyong
 
+# 한글 출력 깨짐 방지 설정
+if locale -a | grep -q "ko_KR.utf8"; then
+    export LANG=ko_KR.utf8
+    export LC_ALL=ko_KR.utf8
+elif locale -a | grep -q "en_US.utf8"; then
+    export LANG=en_US.utf8
+    export LC_ALL=en_US.utf8
+else
+    export LANG=C.UTF-8
+    export LC_ALL=C.UTF-8
+fi
+
 echo "[NOTICE] 스카우터 설치 스크립트를 실행 합니다. 문의 사항은 별도 연락 부탁드립니다."
-sc_svcid="scoutersvc"
+sc_svcid="apm"
 sc_userhome="/home/${sc_svcid}"
 sc_dir="${sc_userhome}/scouter"
 jdk_path="${sc_userhome}/jdk"
