@@ -1,0 +1,157 @@
+20251013 15:03:33 Scouter Server Version 2.20.0 2023-05-29 05:14 GMT
+20251013 15:03:33 [PID]390397
+  ____                  _            
+ / ___|  ___ ___  _   _| |_ ___ _ __ 
+ \___ \ / __/   \| | | | __/ _ \ '__|
+  ___) | (_| (+) | |_| | ||  __/ |   
+ |____/ \___\___/ \__,_|\__\___|_|                                      
+ Open Source S/W Performance Monitoring  
+ Scouter version 2.20.0
+ 
+20251013 15:03:33 Load Account Group File
+20251013 15:03:33 Load Account File
+20251013 15:03:33 Load Account Group File
+20251013 15:03:33 udp listen 0.0.0.0:6100
+20251013 15:03:33 	udp_host=0.0.0.0
+20251013 15:03:33 	udp_port=6100
+20251013 15:03:33 	udp_buffer=65535
+20251013 15:03:33 	udp_so_rcvbuf=4194304
+20251013 15:03:33 Load Account File
+20251013 15:03:33 	tcp_port=6100
+20251013 15:03:33 	cp_agent_so_timeout=60000
+20251013 15:03:33 	cp_client_so_timeout=8000
+20251013 15:03:33 [BuiltInPlugin]scouter.plugin.server.alert.slack.SlackPlugin=>counter
+20251013 15:03:33 [BuiltInPlugin]scouter.plugin.server.alert.slack.SlackPlugin=>alert
+20251013 15:03:33 [BuiltInPlugin]scouter.plugin.server.alert.slack.SlackPlugin=>object
+20251013 15:03:33 [BuiltInPlugin]scouter.plugin.server.alert.slack.SlackPlugin=>xlog
+20251013 15:03:38 [A1601] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20251013 15:03:38 [S215] Alert rule detected : ErrorRate.alert
+20251013 15:03:38 [S1600] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20251013 15:03:38 PLUG-IN : scouter.server.plugin.IAlert loaded #xcgfuci
+20251013 15:03:38 [S1600] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20251013 15:03:38 PLUG-IN : scouter.server.plugin.ICounter loaded #x1t4j5pf
+20251013 15:03:38 [S1600] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20251013 15:03:38 PLUG-IN : scouter.server.plugin.IObject loaded #xsf8ots
+20251013 15:03:38 [S1600] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20251013 15:03:38 PLUG-IN : scouter.server.plugin.IXLog loaded #x96o3vj
+20251013 15:03:38 [S1600] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20251013 15:03:38 PLUG-IN : scouter.server.plugin.IXLog loaded #xtiit2b
+20251013 15:03:38 [S1600] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20251013 15:03:38 PLUG-IN : scouter.server.plugin.IXLogProfile loaded #xjb57ea
+20251013 15:03:38 [S1600] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20251013 15:03:38 PLUG-IN : scouter.server.plugin.ISummary loaded #x6e4nhm
+20251013 15:06:25 [S178] Server Shutdown
+20251013 15:06:25 [S179] Shutdown scouter.server.db.DBCtr$$anon$1@60975100 ...
+20251013 15:06:25 [S179] Shutdown scouter.server.core.CoreRun$$anon$1@1253e7cb ...
+20251013 15:06:29 Scouter Server Version 2.20.0 2023-05-29 05:14 GMT
+20251013 15:06:29 [PID]397480
+  ____                  _            
+ / ___|  ___ ___  _   _| |_ ___ _ __ 
+ \___ \ / __/   \| | | | __/ _ \ '__|
+  ___) | (_| (+) | |_| | ||  __/ |   
+ |____/ \___\___/ \__,_|\__\___|_|                                      
+ Open Source S/W Performance Monitoring  
+ Scouter version 2.20.0
+ 
+20251013 15:06:29 Load Account Group File
+20251013 15:06:29 Load Account File
+20251013 15:06:29 Load Account Group File
+20251013 15:06:29 udp listen 0.0.0.0:6100
+20251013 15:06:29 	udp_host=0.0.0.0
+20251013 15:06:29 	udp_port=6100
+20251013 15:06:29 	udp_buffer=65535
+20251013 15:06:29 	udp_so_rcvbuf=4194304
+20251013 15:06:29 Load Account File
+20251013 15:06:29 	tcp_port=6100
+20251013 15:06:29 	cp_agent_so_timeout=60000
+20251013 15:06:29 	cp_client_so_timeout=8000
+20251013 15:06:29 [BuiltInPlugin]scouter.plugin.server.alert.slack.SlackPlugin=>counter
+20251013 15:06:29 [BuiltInPlugin]scouter.plugin.server.alert.slack.SlackPlugin=>object
+20251013 15:06:29 [BuiltInPlugin]scouter.plugin.server.alert.slack.SlackPlugin=>xlog
+20251013 15:06:29 [BuiltInPlugin]scouter.plugin.server.alert.slack.SlackPlugin=>alert
+20251013 15:06:34 [A1601] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20251013 15:06:34 [S215] Alert rule detected : ErrorRate.alert
+20251013 15:06:34 [S1600] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20251013 15:06:34 PLUG-IN : scouter.server.plugin.IAlert loaded #x1edchdi
+20251013 15:06:34 [S1600] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20251013 15:06:34 PLUG-IN : scouter.server.plugin.ICounter loaded #x1gvsdfa
+20251013 15:06:34 [S1600] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20251013 15:06:34 PLUG-IN : scouter.server.plugin.IObject loaded #x15iurp8
+20251013 15:06:34 [S1600] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20251013 15:06:34 PLUG-IN : scouter.server.plugin.IXLog loaded #x12r2fub
+20251013 15:06:34 [S1600] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20251013 15:06:34 PLUG-IN : scouter.server.plugin.IXLog loaded #x194u9qs
+20251013 15:06:34 [S1600] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20251013 15:06:34 PLUG-IN : scouter.server.plugin.IXLogProfile loaded #xb9rh9d
+20251013 15:06:34 [S1600] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20251013 15:06:34 PLUG-IN : scouter.server.plugin.ISummary loaded #x1i9enla
+20251013 15:49:59 Scouter Server Version 2.20.0 2023-05-29 05:14 GMT
+20251013 15:49:59 [PID]500295
+  ____                  _            
+ / ___|  ___ ___  _   _| |_ ___ _ __ 
+ \___ \ / __/   \| | | | __/ _ \ '__|
+  ___) | (_| (+) | |_| | ||  __/ |   
+ |____/ \___\___/ \__,_|\__\___|_|                                      
+ Open Source S/W Performance Monitoring  
+ Scouter version 2.20.0
+ 
+20251013 15:49:59 Load Account Group File
+20251013 15:49:59 Load Account File
+20251013 15:49:59 Load Account Group File
+20251013 15:49:59 udp listen 0.0.0.0:6100
+20251013 15:49:59 	udp_host=0.0.0.0
+20251013 15:49:59 	udp_port=6100
+20251013 15:49:59 	udp_buffer=65535
+20251013 15:49:59 	udp_so_rcvbuf=4194304
+20251013 15:49:59 Load Account File
+20251013 15:49:59 	tcp_port=6100
+20251013 15:49:59 	cp_agent_so_timeout=60000
+20251013 15:49:59 	cp_client_so_timeout=8000
+20251013 15:49:59 [BuiltInPlugin]scouter.plugin.server.alert.slack.SlackPlugin=>counter
+20251013 15:49:59 [BuiltInPlugin]scouter.plugin.server.alert.slack.SlackPlugin=>alert
+20251013 15:49:59 [BuiltInPlugin]scouter.plugin.server.alert.slack.SlackPlugin=>object
+20251013 15:49:59 [BuiltInPlugin]scouter.plugin.server.alert.slack.SlackPlugin=>xlog
+20251013 15:50:00 [HTTP] Failed to start http server
+javax.servlet.ServletException: org.glassfish.jersey.servlet.ServletContainer-1779c25c@79b66753==org.glassfish.jersey.servlet.ServletContainer,jsp=null,order=1,inst=false
+	org.eclipse.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:658)
+	org.eclipse.jetty.servlet.ServletHolder.initialize(ServletHolder.java:421)
+	org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:760)
+	org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:348)
+	org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:785)
+	org.eclipse.jetty.servlet.ServletContextHandler.doStart(ServletContextHandler.java:261)
+	org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:131)
+	org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:105)
+	org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:113)
+	org.eclipse.jetty.server.handler.gzip.GzipHandler.doStart(GzipHandler.java:272)
+	org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:131)
+	org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:113)
+	org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:113)
+	org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:131)
+	org.eclipse.jetty.server.Server.start(Server.java:452)
+	org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:105)
+	org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:113)
+	org.eclipse.jetty.server.Server.doStart(Server.java:419)
+	org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	scouter.server.http.HttpServer.run(HttpServer.java:125)
+20251013 15:50:04 [A1601] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20251013 15:50:04 [S215] Alert rule detected : ErrorRate.alert
+20251013 15:50:04 [S1600] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20251013 15:50:04 PLUG-IN : scouter.server.plugin.IAlert loaded #x4dqhlk
+20251013 15:50:04 [S1600] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20251013 15:50:04 PLUG-IN : scouter.server.plugin.ICounter loaded #x1g63l9d
+20251013 15:50:04 [S1600] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20251013 15:50:04 PLUG-IN : scouter.server.plugin.IObject loaded #x1isl1a8
+20251013 15:50:04 [S1600] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20251013 15:50:04 PLUG-IN : scouter.server.plugin.IXLog loaded #x1vg3i5c
+20251013 15:50:04 [S1600] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20251013 15:50:04 PLUG-IN : scouter.server.plugin.IXLog loaded #x1tqth3h
+20251013 15:50:04 [S1600] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20251013 15:50:04 PLUG-IN : scouter.server.plugin.IXLogProfile loaded #x1fnc3t6
+20251013 15:50:04 [S1600] error on toClass with javassist. try to fallback for java8 below. err:java.lang.Class.getModule()Ljava/lang/Module;
+20251013 15:50:04 PLUG-IN : scouter.server.plugin.ISummary loaded #x19bcdjs
+20251013 15:51:30 [S104] New OBJECT  objType=linux objHash=xg8c1e3 objName=/vm39 addr=121.170.212.39 2.20.0 2023-05-29 05:14 GMT alive 2025-10-13 15:51:30.553 {detected=linux,podName=,kubeSeq=-1,useKubeSeq=false,hostName=vm39}
+20251013 15:51:50 [S104] New OBJECT  objType=tomcat objHash=ze8ldmv objName=/vm39/jdy-was-01 addr=121.170.212.39 2.20.0 2023-05-29 05:14 GMT_ENV_java8plus alive 2025-10-13 15:51:50.793 {detected=tomcat,ADC=false}
+20251013 16:28:53 [S104] New OBJECT  objType=linux objHash=z19ur706 objName=/jindeokyong-test-193 addr=10.10.40.193 2.20.0 2023-05-29 05:14 GMT alive 2025-10-13 16:28:53.836 {detected=linux,podName=,kubeSeq=-1,useKubeSeq=false,hostName=jindeokyong-test-193}
