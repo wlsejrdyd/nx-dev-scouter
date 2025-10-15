@@ -211,7 +211,7 @@ WantedBy=multi-user.target" > /usr/lib/systemd/system/scouter-host.service
 #===========================================================
 #Scouter Setting
 #===========================================================
-SCOUTER_AGENT_DIR=/home/scoutersvc/scouter/agent.java
+SCOUTER_AGENT_DIR=/home/apm/scouter/agent.java
 JAVA_OPTS="\${JAVA_OPTS} -javaagent:\${SCOUTER_AGENT_DIR}/scouter.agent.jar"
 JAVA_OPTS="\${JAVA_OPTS} -Dscouter.config=\${SCOUTER_AGENT_DIR}/conf/scouter.$objname.conf"
 EOF
