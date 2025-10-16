@@ -48,7 +48,7 @@ jobs:
         run: |
           curl -X POST -H 'Content-type: application/json' \
           --data "{
-            \"text\": \"✅ 빌드 및 배포 성공!\n- 이름: ${{env.REPONAME}}\n- 버전: ${{ env.DATE }}-${{ env.VERSION }}\n- 브랜치: ${{ github.ref_name }}\n- 코멘트: ${{ github.event.head_commit.message }}\n- 작성자: ${{ github.event.head_commit.author.name }}\"
+            \"text\": \"✅ 빌드 및 배포 성공!\n- 이름: ${{ env.REPONAME }}\n- 버전: ${{ env.DATE }}-${{ env.VERSION }}\n- 브랜치: ${{ github.ref_name }}\n- 코멘트: ${{ github.event.head_commit.message }}\n- 작성자: ${{ github.event.head_commit.author.name }}\"
           }" ${{ secrets.SLACK_WEBHOOK_URL }}
 
       # Slack 알림 (빌드 실패)
