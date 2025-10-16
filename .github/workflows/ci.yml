@@ -32,9 +32,9 @@ jobs:
 
       # 레파지토리 이름 확인 
       - name: Repository name check
-          run: "repo name is $REPONAME"
-          env:
-            REPONAME: nx-dev-scouter
+        run: "repo name is $REPONAME"
+        env:
+          REPONAME: nx-dev-scouter
 
       # 날짜 + 버전 변수 설정
       - name: 변수 설정 (DATE, VERSION)
