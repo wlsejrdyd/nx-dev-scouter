@@ -32,7 +32,7 @@ jobs:
 
       # 레파지토리 이름 확인 
       - name: Repository name check
-        run: "repo name is $REPONAME"
+        run: echo "repo name is $REPONAME"
         env:
           REPONAME: nx-dev-scouter
 
