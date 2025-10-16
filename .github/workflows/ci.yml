@@ -54,12 +54,12 @@ jobs:
             \"text\": \"❌ 빌드 실패!\n- 버전: ${{ env.DATE }}-${{ env.VERSION }}\n- 브랜치: ${{ github.ref_name }}\n- 커밋: ${{ github.event.head_commit.message }}\n- 작성자: ${{ github.event.head_commit.author.name }}\"
           }" ${{ secrets.SLACK_WEBHOOK_URL }}
 
-      # GitHub 태그 추가
-      - name: GitHub 태그 추가
-        if: success()
-        run: |
-          git config user.name "jdy"
-          git config user.email "wlsejrdyd@gmail.com"
-          git tag "${{ env.DATE }}-${{ env.VERSION }}"
-          git push origin "${{ env.DATE }}-${{ env.VERSION }}"
+          #      # GitHub 태그 추가
+          #      - name: GitHub 태그 추가
+          #        if: success()
+          #        run: |
+          #          git config user.name "jdy"
+          #          git config user.email "wlsejrdyd@gmail.com"
+          #          git tag "${{ env.DATE }}-${{ env.VERSION }}"
+          #          git push origin "${{ env.DATE }}-${{ env.VERSION }}"
 
